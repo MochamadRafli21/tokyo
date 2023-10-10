@@ -17,16 +17,18 @@ export default function NavbarDesktop (){
           <div className="hidden md:flex content-center justify-between">
             <div className="flex w-fit">
               <Image
+              className="w-[100px] h-[86px]"
               src="/pp.png"
               alt="pp"
               width={136}
               height={82}
               />
               <Image
+              className="w-[100px] h-[80px]"
               src="/logo.png"
               alt="tokyo"
-              width={200}
-              height={40}
+              width={130}
+              height={20}
               />
             </div>
             <div className="p-4">
