@@ -6,8 +6,8 @@ import { useState } from "react"
 export default function NavbarMobile (){
   const [isMenuShow, setisMenuShow] = useState(false)
   return (
-        <>
-        <div className="md:hidden flex justify-between">
+        <div className="fixed md:hidden w-full top-0 z-50 bg-white">
+        <div className="flex justify-between">
           <Image
           src="/pp.png"
           alt="pp"
@@ -29,15 +29,13 @@ export default function NavbarMobile (){
             </svg>
           </button>
         </div>
-          <div className="p-4 md:p-0 bg-white">
-          <div className={isMenuShow ?  "flex flex-col gap-2 z-50 ease-in-out delay-75": "hidden"}>
-            <Link href='#Kawasan'>Kawasan Sekitar</Link>
-            <Link href='#Fasilitas'>Fasilitas</Link>
-            <Link href='#Unit'>Unit</Link>
-            <Link href='#Cicilan'>Cicilan</Link>
-            <Link href='#Kontrak'>Kontrak</Link>
+          <div className={isMenuShow ?  "flex bg-white flex-col p-4 gap-2 z-50 ease-in-out delay-200 opacity-100": "opacity-0"}>
+            <Link onClick={()=>setisMenuShow(false)} href='#Kawasan'>Kawasan Sekitar</Link>
+            <Link onClick={()=>setisMenuShow(false)} href='#Fasilitas'>Fasilitas</Link>
+            <Link onClick={()=>setisMenuShow(false)}href='#Unit'>Unit</Link>
+            <Link onClick={()=>setisMenuShow(false)} href='#Cicilan'>Cicilan</Link>
+            <Link onClick={()=>setisMenuShow(false)} href='#Kontak'>Kontak</Link>
           </div>
-          </div>
-      </>
+      </div>
   )
 }

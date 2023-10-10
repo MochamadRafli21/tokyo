@@ -13,7 +13,7 @@ export default function NavbarDesktop (){
   }
 
   return (
-        <div className="sticky z-50">
+        <div className="fixed w-full top-0 z-50">
           <div className="hidden md:flex content-center justify-between">
             <div className="flex w-fit">
               <Image
@@ -25,7 +25,7 @@ export default function NavbarDesktop (){
               <Image
               src="/logo.png"
               alt="tokyo"
-              width={136}
+              width={200}
               height={40}
               />
             </div>
@@ -52,9 +52,9 @@ export default function NavbarDesktop (){
                     Cicilan 
                 </button>
                 <button 
-                className={path.includes('Kontrak')?'text-white font-bold px-2':'text-black px-2'} 
-                onClick={()=>navigate('/#Kontrak')}>
-                    Kontrak 
+                className={path.includes('Kontak')?'text-white font-bold px-2':'text-black px-2'} 
+                onClick={()=>navigate('/#Kontak')}>
+                    Kontak 
                 </button>
               </div>
             </div>
