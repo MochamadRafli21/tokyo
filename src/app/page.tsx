@@ -231,7 +231,7 @@ export default function Home() {
           <div className="w-full row-span-2 row-end-2 text-white md:text-4xl bg-yellow-600 p-4">
             <Link href="https://api.whatsapp.com/send/?phone=6281911931148&type=phone_number&app_absent=0">
 
-              <h1 className="font-bold text-[44px] p-4">
+              <h1 className="font-bold text-[44px] py-4">
             Tertarik dengan <br/> unit kami? 
           </h1>
           <p>
@@ -251,7 +251,7 @@ export default function Home() {
     <footer className="md:hidden h-fit py-2">
       <div id="Kontak" className="grid justify-center bottom-0 h-[342px]">
       <h1 className="font-bold text-3xl">Tertarik dengan unit kami?</h1>
-      <div className="pt-4 text-white font-bold flex flex-col items-center">
+      <div className="pt-4 text-white font-bold flex flex-col justify-center items-center">
         <Image
         className="row-span-3 item-end w-[220px] h-[300px]"
         alt='profile.jpeg'
@@ -259,16 +259,18 @@ export default function Home() {
         width={220}
         height={300}
         />
+        <Link className="flex flex-col items-center" href="https://api.whatsapp.com/send/?phone=6281911931148&type=phone_number&app_absent=0">
         <h1 className="text-[20px]">Hubungi via</h1>
         <div className="flex pt-2 gap-2">
           <Image src={"/whatsapp.png"} alt='' width={20} height={20} />
           <p>081911931148</p>
         </div>
+      </Link>
       </div>
      </div>
    </footer>
-   <div className="hidden md:relative w-full ">
-     <div className="absolute top-[-250px] z-[-20] bg-yellow-600 w-full min-h-[320px]"></div>
+   <div className="md:hidden relative w-full ">
+     <div className="absolute top-[-220px] z-[-20] bg-yellow-600 w-full min-h-[320px]"></div>
    </div>
     </main>
   )
