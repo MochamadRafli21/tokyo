@@ -205,15 +205,15 @@ export default function Home() {
     <div className="grid md:grid-cols-2 justify-items-center gap-8 p-8">
       <Image
       className="w-[438px]"
-      alt='cicilan1.jpeg'
-      src={'/cicilan1.jpeg'}
+      alt='skema1.png'
+      src={'/skema1.png'}
       width={438}
       height={510}
       /> 
       <Image
       className="w-[438px]"
-      alt='cicilan2.jpeg'
-      src={'/cicilan2.jpeg'}
+      alt='skema2.png'
+      src={'/skema2.png'}
       width={438}
       height={510}
       /> 
